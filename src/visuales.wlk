@@ -3,7 +3,7 @@ import nivel.*
 
 import wollok.game.*
 import elementos.*
-import score.*
+
 
 object goku inherits Visual(image = "goku1.png",position = game.center()){
 
@@ -14,44 +14,33 @@ object goku inherits Visual(image = "goku1.png",position = game.center()){
 		esferas.add(esferaNum)
 	}
 
-	//method restaMonedas(cantidad) {
-	//		if (cantidad > monedas)
-	//			throw new Exception(message = "No tengo suficiente monedas para eso")
-	//		monedas -= cantidad
-	//}
-	
-	//method agarrarIngrediente(ingrediente){
-	//	self.sumaMonedas(ingrediente.monedas())
-	//}
-
-	//method canta() {
-	//	game.say(self, "Vivo en una piña debajo del mar")
-	//}
-	
 	method cuantasEsferas(){
-		game.say(self, "Tengo " + self.esferas().size() + " esferas!!")
+		if (self.esferas().size()==0){
+			game.say(self,"Debo darme prisa!!")
+		}
+		else {game.say(self, "Tengo " + self.esferas() + " esferas!!")}
 	}
 
 }
 //Fondos del juego de las distintas pantallas
 
 object fondoDelJuego inherits Visual(
-	image = "fondoNamek1.PNG",
+	image = "fondoNamek1.jpg",
 	position = new Position(x=1,y=1)
 ){
 	method colisionadoPor(visual){}
 }
 const inicioDelJuego = new Visual(
-	image =  "namekIntro.png",
+	image =  "namekIntro.jpg",
 	position = game.at(1,1)
 )
 
 const winVisual = new Visual(
-	image = "porunga.gif",
+	image = "porunga1.png",
 	position = game.origin()
 )
 
-const gameOver = new Visual(
+const gameOverVisual = new Visual(
 	image = "freezerGameOver.gif", 
 	position = game.at(1,1)
 )

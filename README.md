@@ -2,7 +2,7 @@
 
 ## Juego realizado con la biblioteca Wollok Game
 
-![reemplazar por una animación del juego](https://d33wubrfki0l68.cloudfront.net/1ba3cf64b23a4ac786d7432121abbd782794730c/ce83b/documentacion/conceptos/images/wollokcharacter.gif)
+![reemplazar por una animación del juego](https://newdragonball.files.wordpress.com/2019/02/tumblr_pj7e53mqrf1ujn35ko1_400.gif?w=351)
 
 ### Resumen: 
 	Goku tendrá que reunir las esferas del dragón del planeta Namekusei 
@@ -13,13 +13,11 @@
 
 ### Instrucciones:
 	1. Moverse con la teclas de dirección para perseguir a las esferas.
-	2. Evitar a los soldados de freezer a menos que goku active su kaioken.
-	3. El kaioken solo dura 5 seg activado y tarda 10 en recargarse la energia
-	   para volver a utilizarlo.
-	4. Recoger las semillas del ermitaño que aparecen para recargar la energia
-	   del kaioken automaticamente.
-	5. Si goku sufre tres enfrentamientos con los soldados de Freezer sin el kaioken
-	   se termina el juego.
+	2. Evitar a los soldados de freezer a menos que goku haya recuperado su energia.
+	3. El kaioken solo podra ser utilizado cuando goku recupere su energia.
+	4. Buscar a dende para que le devuelva su energia.
+	5. Si goku sufre un enfrentamiento con los enemigos y no tiene suficiente energia, perdera el juego,
+	   caso contrario los derrota y roba las esferas que hayan reunido.
 	6. Si los soldados de Freezer reunen las 7 esferas antes que goku 
 	   se termina el juego.
 
@@ -33,7 +31,7 @@
 	Goku tendrá que usar sabiamente su energía y guardar su técnica especial, el kaioken,
 	para enfrentarse a los soldados y quitarle sus esferas en el caso de que tengan alguna.
 	Si goku es derrotado por los soldados, estos les quitaran las esferas que ya 
-	haya reunido y deberá darse prisa para arruinar el plan de Freezer.
+	haya reunido y no podrá detener el plan de Freezer.
 	
 Autores:
 
