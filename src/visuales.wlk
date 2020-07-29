@@ -47,7 +47,7 @@ const gameOverVisual = new Visual(
 
 class Visual {
 	var property image
-	var property position = game.origin()
+	var property position = new Position(x=10,y=10)
 }
 
 

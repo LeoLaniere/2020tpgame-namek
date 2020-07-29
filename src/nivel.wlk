@@ -38,8 +38,10 @@ object nivel{
 				image = "celda.png").dibujar()
 
 		[dodoria,zaabon,freezer,esfera01,esfera02,esfera03,esfera04,esfera05,esfera06,esfera07,dende].forEach { elemento =>  
-			game.addVisual(elemento)
+			
+			//console.println("hola")
 			self.ubicarAleatoriamente(elemento) 
+			game.addVisual(elemento)
 		}
 		//Colisiones
 		
@@ -58,11 +60,22 @@ object nivel{
 			
 			
 	}
-	
+	method roundUp(nro){
+   	 return if (nro %1 == 0) nro.div(1) else nro.div(1)+1 
+	}
 	method ubicarAleatoriamente(visual){
-		var posicion = new Position (x=1.randomUpTo(anchoRecuadro),y=1.randomUpTo(altoRecuadro))
-		if(game.getObjectsIn(posicion).isEmpty())
-			{visual.position(posicion)}
+		//const x = 1.randomUpTo(game.width(anchoRecuadro)).truncate(0)
+		//const y = 1.randomUpTo(game.height(altoRecuadro)).truncate(0)
+		//otra forma de generar números aleatorios
+		//const x = (0.. game.width()-1).anyOne() 
+		//const y = (0.. game.height()-1).anyOne() 
+		//var posicionRandom = game.at(x,y)
+		
+		var posicionRandom = new Position (x=1.randomUpTo(anchoRecuadro).roundUp(),y=1.randomUpTo(altoRecuadro).roundUp())
+		//console.println(posicion)
+		//posicion= .round(posicion)
+		if(game.getObjectsIn(posicionRandom).isEmpty())
+			{visual.position(posicionRandom)}
 		else
 			{self.ubicarAleatoriamente(visual)}			
 		
