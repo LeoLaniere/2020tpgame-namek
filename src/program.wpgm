@@ -1,5 +1,8 @@
 import wollok.game.*
 import nivel.*
+import visuales.*
+import factories.*
+import elementos.*
 
 program namek {
 	nivel.inicio()

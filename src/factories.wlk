@@ -26,7 +26,7 @@ object izquierda {
 object derecha { 
 	method siguiente(position) = position.right(1) 
 	method opuesto() = izquierda
-}
+ 	}
 
 object abajo { 
 	method siguiente(position) = position.down(1) 

@@ -58,13 +58,15 @@ class Visual {
 object win{
 	
 	method actualizarTotalEsferas(){
-		if ([dodoria,freezer,zaabon].anyOne{enemigo => enemigo.esferasEnemigo().size() == 7})
+		
+		if ((freezer.esferasEnemigo().size()) == 7)
 			nivel.gameOver()
 		else{ 
-			if(goku.esferas().size() == 7)
+			if((goku.esferas().size()) == 7)
 				nivel.hasGanado()
 			else 
 				goku.cuantasEsferas()
 		}
 	}
-}
+	}
+	
